@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/3dd7bddb0acd4667840ee2688ad7dcc7.jpg" alt="" id="img">
+    <input type="text" id="txt">
+    <input type="button" value="Сменить картинку" id="btn">
+
+    <script>
+        document.getElementById("btn").onclick=function(){
+            document.getElementById("img").src=document.getElementById("txt").value;
+        }
+    </script>
+</body>
+</html>

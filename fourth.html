@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <form action="">
+        <p>
+            <label for="thick">Ширина</label>
+            <input type="text" name="" id="thick">
+        </p>
+        <p>
+            <label for="color">Цвет</label>
+            <input type="text" name="" id="color">
+        </p> 
+        <input type="button" value="Применить свойства" id="btn">
+    </form>
+    <script>
+        document.getElementById("btn").onclick=function(){
+            let borderStyle = document.getElementById("thick").value + "px" + " solid" + " " + document.getElementById("color").value;
+            console.log(borderStyle);
+            document.querySelector("table").style.border = borderStyle;
+        }
+    </script>
+</body>
+</html>
